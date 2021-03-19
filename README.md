@@ -3,6 +3,26 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+## Few pointers
+
+* app name - 
+* engine name - settings
+* addon name - common-utilities
+* [This](https://github.com/siva-sundar/embroider-cannot-find-module-error/blob/master/lib/settings/package.json#L13) is how we mention in-repo addon as dependency to in-repo engine.
+
+**Error**
+
+
+**Currently using**
+
+```json
+  "ember-cli": "~3.8.3",
+  "@embroider/compat": "^0.36.0",
+  "@embroider/core": "^0.36.0",
+  "@embroider/webpack": "^0.36.0",
+  "ember-engines": "^0.8.12"
+```
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
