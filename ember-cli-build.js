@@ -1,7 +1,9 @@
-/* eslint-env node */
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const { Webpack } = require('@embroider/webpack');
+const EmbroiderCompat = require('@embroider/compat');
+const path = require('path');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
@@ -21,5 +23,18 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  return app.toTree();
+  return EmbroiderCompat.compatBuild(app, Webpack, {
+     packagerOptions: {
+       webpackConfig: {
+         resolve: {
+           alias: {
+             'embroider-cannot-find-module-error': path.resolve(__dirname, './app'), // app
+             settings: path.resolve(__dirname, './lib/settings/'), // addon 
+             'common-utilities': path.resolve(__dirname, './lib/common-utilities/'), // engine
+           }
+         }
+       }
+     }
+   });
+
 };
