@@ -1,7 +1,6 @@
 # embroider-cannot-find-module-error
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Reproduction of error while building an ember app with embroider: `Module not found: Error`
 
 ## Few pointers
 
