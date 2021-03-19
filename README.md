@@ -11,6 +11,7 @@ A short introduction of this app could easily go here.
 * [This](https://github.com/siva-sundar/embroider-cannot-find-module-error/blob/master/lib/settings/package.json#L13) is how we mention in-repo addon as dependency to in-repo engine.
 
 **Error**
+![Error](https://github.com/siva-sundar/embroider-cannot-find-module-error/blob/master/error.png?raw=true)
 
 
 **Currently using**
